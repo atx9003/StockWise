@@ -1,1 +1,2 @@
-print("Olá Mundo")
+nome = str(input("Digite seu nome: "))
+print("Olá" , nome)
