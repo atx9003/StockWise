@@ -114,3 +114,13 @@ nav {
     font-weight: 600;
     cursor: pointer;
 }
+
+footer {
+    display: flex;
+    padding: 20px 0 30px;
+    justify-content: center;
+}
+
+footer p {
+    color: #fff;
+}
