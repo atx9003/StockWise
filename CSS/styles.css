@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -40,7 +41,7 @@ img {
   height: 100px;
 }
 
-button {
+.box button {
   font-size: 15px;
   color: #636363;
   border: none;
@@ -52,4 +53,64 @@ button {
 
 button:hover {
   background-color: #d6d4d4;
+}
+
+/* Modais */
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  background-color: #fff;
+  z-index: 10;
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+#close-modal {
+  padding: 0.6rem 1.2rem;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#fade,
+#modal {
+  opacity: 1;
+  transition: 0.5s;
+  pointer-events: all;
+}
+
+.modal-body p {
+  margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modal.hide {
+  top: 0;
 }
