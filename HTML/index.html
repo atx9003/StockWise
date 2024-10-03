@@ -27,7 +27,7 @@
             />
             <div class="name">Vidros</div>
             <div class="price">R$150,00/m²</div>
-            <button id="open-modal-edit">
+            <button id="open-modal-edit" onclick="openModal('Pedro')">
               <i class="fa-solid fa-pencil"></i>
             </button>
             <button>
@@ -35,29 +35,6 @@
             </button>
           </div>
         </div>
-        <!-- Modal 1 -->
-        <div id="fade" class="hide"></div>
-        <div id="modal" class="hide">
-          <div class="modal-header">
-            <h2>Edite o item</h2>
-            <button id="close-modal">Fechar</button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure enim
-              sequi error iste vel quam consequuntur doloribus impedit placeat
-              rerum deserunt, officia velit neque debitis, culpa porro.
-              Deleniti, corporis nostrum?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ex
-              eveniet alias reprehenderit quis aliquid vitae nostrum quod amet
-              nesciunt velit repellendus illo, nulla aliquam et sapiente porro
-              neque quidem?
-            </p>
-          </div>
-        </div>
-        <!-- Fim Modal 1 -->
         <div class="box">
           <div class="img">
             <img
@@ -138,6 +115,14 @@
             </button>
           </div>
         </div>
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body"></div>
+          </div>
+        </div>
+        <!-- Fim Modal -->
       </section>
     </main>
     <footer></footer>
