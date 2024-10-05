@@ -15,7 +15,9 @@
   </head>
   <body>
     <header>
-      <h1>Sistema de Gerenciamento de Estoque</h1>
+      <nav>
+        <h1>Sistema de Gerenciamento de Estoque</h1>
+      </nav>
     </header>
     <main>
       <section>
@@ -25,93 +27,85 @@
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXL2mkkUB-YvjJm8spogrfuR70TXdwxTtDTg&s"
               alt="Vidros"
             />
-            <div class="name">Vidros</div>
-            <div class="price">R$150,00/m²</div>
+            <div class="name"><p>Vidros</p></div>
+            <div class="price"><p>R$150,00/m²</p></div>
+            <div class="qtd"><p>Unidade: 200</p></div>
             <button id="open-modal-edit" onclick="openModal('Pedro')">
               <i class="fa-solid fa-pencil"></i>
             </button>
-            <button>
-              <i class="fa-solid fa-trash"></i>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img
+              src="https://everaldoferragens.com.br/wp-content/uploads/2021/06/EveraldoFerragens-ferragens-economizarferro.png"
+              alt="Ferragem"
+            />
+            <div class="name"><p>Ferragem</p></div>
+            <div class="price"><p>R$150,00/kg</p></div>
+            <div class="qtd"><p>Unidade: 200</p></div>
+            <button onclick="openModal()">
+              <i class="fa-solid fa-pencil"></i>
             </button>
           </div>
         </div>
         <div class="box">
           <div class="img">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXL2mkkUB-YvjJm8spogrfuR70TXdwxTtDTg&s"
-              alt="Vidros"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaBkP9wm4E_W4w7OTvsHcN0R_9KFoesXHYwQ&s"
+              alt="PVC"
             />
-            <div class="name">Vidros</div>
-            <div class="price">R$150,00/m²</div>
-            <button>
+            <div class="name"><p>PVC</p></div>
+            <div class="price"><p>R$50,00/m²</p></div>
+            <div class="qtd"><p>Unidade: 200</p></div>
+
+            <button onclick="openModal()">
               <i class="fa-solid fa-pencil"></i>
-            </button>
-            <button>
-              <i class="fa-solid fa-trash"></i>
             </button>
           </div>
         </div>
         <div class="box">
           <div class="img">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXL2mkkUB-YvjJm8spogrfuR70TXdwxTtDTg&s"
-              alt="Vidros"
+              src="https://images.tcdn.com.br/img/img_prod/985953/tabua_de_madeira_cambara_tauari_bruta_20x2x3m_205_1_688993f1ce4195f316fb5eb4c2d42c75.jpg"
+              alt="Madeira"
             />
-            <div class="name">Vidros</div>
-            <div class="price">R$150,00/m²</div>
-            <button>
+            <div class="name"><p>Madeira</p></div>
+            <div class="price"><p>R$80,00/m²</p></div>
+            <div class="qtd"><p>Unidade: 200</p></div>
+
+            <button onclick="openModal()">
               <i class="fa-solid fa-pencil"></i>
-            </button>
-            <button>
-              <i class="fa-solid fa-trash"></i>
             </button>
           </div>
         </div>
         <div class="box">
           <div class="img">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXL2mkkUB-YvjJm8spogrfuR70TXdwxTtDTg&s"
-              alt="Vidros"
+              src="https://www.tekbond.com.br/sites/tekbond.com.br/files/2022-04/ultravioleta-uv-cola-vidro-adesivo-866-50g-tekbond-saint-gobain-low.jpg"
+              alt="Cola para vidro"
             />
-            <div class="name">Vidros</div>
-            <div class="price">R$150,00/m²</div>
-            <button>
+            <div class="name"><p>Cola para vidro</p></div>
+            <div class="price"><p>R$20,00</p></div>
+            <div class="qtd"><p>Unidade: 200</p></div>
+
+            <button onclick="openModal()">
               <i class="fa-solid fa-pencil"></i>
-            </button>
-            <button>
-              <i class="fa-solid fa-trash"></i>
             </button>
           </div>
         </div>
         <div class="box">
           <div class="img">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXL2mkkUB-YvjJm8spogrfuR70TXdwxTtDTg&s"
-              alt="Vidros"
+              src="https://images-americanas.b2w.io/produtos/5022429174/imagens/parafusos-com-buchas-kit-com-500-unidades-6mm-8mm-10mm/5022429174_1_large.jpg"
+              alt="Parafusos e buchas"
             />
-            <div class="name">Vidros</div>
-            <div class="price">R$150,00/m²</div>
-            <button>
+            <div class="name"><p>Parafusos e buchas</p></div>
+            <div class="price"><p>R$10,00</p></div>
+            <div class="qtd"><p>Unidade: 200</p></div>
+
+            <button onclick="openModal()">
               <i class="fa-solid fa-pencil"></i>
-            </button>
-            <button>
-              <i class="fa-solid fa-trash"></i>
-            </button>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXL2mkkUB-YvjJm8spogrfuR70TXdwxTtDTg&s"
-              alt="Vidros"
-            />
-            <div class="name">Vidros</div>
-            <div class="price">R$150,00/m²</div>
-            <button>
-              <i class="fa-solid fa-pencil"></i>
-            </button>
-            <button>
-              <i class="fa-solid fa-trash"></i>
             </button>
           </div>
         </div>
@@ -123,6 +117,13 @@
           </div>
         </div>
         <!-- Fim Modal -->
+      </section>
+      <section class="adicionar-itens">
+        <div class="adicionar">
+          <button class="add" onclick="openModal('Pedro')">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
       </section>
     </main>
     <footer></footer>
