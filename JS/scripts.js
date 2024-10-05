@@ -19,7 +19,25 @@ function openModal(title) {
   const closeBtn = document.querySelector(".close");
 
   modalBody.innerHTML = `
-     <h2>${title}</h2>
+              <!-- header do modal -->
+              <div class="header">
+                <h2>${title}</h2>
+              </div>
+              <!-- body do modal -->
+              <div class="body">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum eos distinctio, culpa dolorem beatae delectus? Itaque
+                  ullam eos quas recusandae ad? Et enim quas accusantium ipsam
+                  fugit, maxime consectetur ipsum!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dolorem provident illum quibusdam similique reprehenderit ex
+                  doloremque. Culpa eligendi, odit ipsum molestiae minima harum
+                  adipisci itaque eveniet sunt totam eum tempore.
+                </p>
+              </div>
   `;
 
   modal.style.display = "block";

@@ -132,7 +132,7 @@ button:hover {
 .modal-content {
   background-color: #fff;
   border-radius: 0.7rem;
-  margin: 15% auto;
+  margin: 18% auto;
   width: 500px;
   max-width: 90%;
   padding: 20px;
@@ -151,4 +151,14 @@ button:hover {
   text-decoration: none;
   cursor: pointer;
   transition: 0.2s;
+}
+
+.header {
+  padding: 0 20px 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.body p {
+  margin-bottom: 15px;
 }
