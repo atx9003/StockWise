@@ -14,10 +14,15 @@
 // });
 
 function openModal(title) {
+  // obtem os elementos do HTML e armazena-os em uma variável
   const modal = document.getElementById("modal");
   const modalBody = document.querySelector(".modal-body");
   const closeBtn = document.querySelector(".close");
 
+  // Faz o modal aparecer
+  modal.style.display = "block";
+
+  // Acrescenta o que estiver dentro das crases no HTML
   modalBody.innerHTML = `
               <!-- header do modal -->
               <div class="header">
@@ -40,8 +45,7 @@ function openModal(title) {
               </div>
   `;
 
-  modal.style.display = "block";
-
+  // dá ao span a funcionalidade de fechar o modal
   closeBtn.onclick = function () {
     modal.style.display = "none";
   };
