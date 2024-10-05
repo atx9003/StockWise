@@ -18,6 +18,8 @@ function openModal(title) {
   const modalBody = document.querySelector(".modal-body");
   const closeBtn = document.querySelector(".close");
 
+  modal.style.display = "block";
+
   modalBody.innerHTML = `
               <!-- header do modal -->
               <div class="header">
@@ -39,8 +41,6 @@ function openModal(title) {
                 </p>
               </div>
   `;
-
-  modal.style.display = "block";
 
   closeBtn.onclick = function () {
     modal.style.display = "none";
