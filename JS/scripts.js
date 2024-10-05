@@ -46,6 +46,7 @@ function openModal(title) {
   `;
 
   // dá ao span a funcionalidade de fechar o modal
+
   closeBtn.onclick = function () {
     modal.style.display = "none";
   };
