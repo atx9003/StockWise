@@ -24,25 +24,39 @@ function openModal(title) {
 
   // Acrescenta o que estiver dentro das crases no HTML
   modalBody.innerHTML = `
-              <!-- header do modal -->
               <div class="header">
-                <h2>${title}</h2>
+                <h2>Editar</h2>
               </div>
-              <!-- body do modal -->
-              <div class="body">
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Harum eos distinctio, culpa dolorem beatae delectus? Itaque
-                  ullam eos quas recusandae ad? Et enim quas accusantium ipsam
-                  fugit, maxime consectetur ipsum!
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolorem provident illum quibusdam similique reprehenderit ex
-                  doloremque. Culpa eligendi, odit ipsum molestiae minima harum
-                  adipisci itaque eveniet sunt totam eum tempore.
-                </p>
-              </div>
+              <form action="" class="form-edit">
+                <div class="box-input">
+                  <label for="nome">Nome</label>
+                  <input
+                    type="text"
+                    name="nome"
+                    placeholder="Insira o nome do produto"
+                    class="block"
+                  />
+                </div>
+                <div class="box-input">
+                  <label for="preco">Preço</label>
+                  <input
+                    type="text"
+                    name=""
+                    placeholder="Insira o preço do produto"
+                    class="block"
+                  />
+                </div>
+                <div class="box-input">
+                  <label for="qtd">Quantidade</label>
+                  <input
+                    type="text"
+                    name="qtd"
+                    placeholder="Insira o quantidade do produto"
+                    class="block"
+                  />
+                </div>
+                <input type="submit" name="" id="salvar" value="Salvar" />
+              </form>
   `;
 
   // dá ao span a funcionalidade de fechar o modal
