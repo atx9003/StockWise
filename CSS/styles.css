@@ -32,13 +32,18 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px 20px;
+  gap: 20px; /* Aumentei o espaçamento entre as caixas */
 }
 
 .box {
   border: 1px solid #ccc;
   max-width: 90%;
   padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 img {
@@ -48,7 +53,7 @@ img {
 }
 
 .box p {
-  margin-bottom: 7px;
+  margin-bottom: 10px; /* Aumentei o espaçamento entre os elementos */
   font-size: 21px;
 }
 
@@ -79,12 +84,12 @@ button:hover {
   background-color: #c9c4c4;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* Estilização do nome do produto */
+.name p {
+  font-weight: bold;
   text-align: center;
+  font-size: 22px;
+  margin-top: 10px;
 }
 
 /* Modal-edit */
@@ -243,5 +248,3 @@ button:hover {
 #salvar:hover {
   background-color: #39d824;
 }
-
-
