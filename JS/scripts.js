@@ -66,47 +66,52 @@ function openModalCreate() {
   modalCreate.style.display = "block";
 
   modalBodyCreate.innerHTML = `
-    <div class="header">
+            <div class="header">
               <h2>Criar novo item</h2>
             </div>
             <form action="" class="form-edit">
-              <div class="box-input">
-                <label for="nome">Nome</label>
-                <input
-                  type="text"
-                  name="nome"
-                  placeholder="Insira o nome do produto"
-                  class="block"
-                />
+              <div class="inputs">
+                <div class="box-input">
+                  <label for="nome">Nome</label>
+                  <input
+                    type="text"
+                    name="nome"
+                    placeholder="Insira o nome do produto"
+                    class="block"
+                  />
+                </div>
+                <div class="box-input">
+                  <label for="nome">Imagem</label>
+                  <input
+                    type="file"
+                    name="nome"
+                    placeholder="Insira a imagem do produto"
+                    class="image"
+                  />
+                </div>
+                <div class="box-input">
+                  <label for="preco">Preço</label>
+                  <div class="inputs"></div>
+                  <input
+                    type="text"
+                    name=""
+                    placeholder="Insira o preço do produto"
+                    class="block"
+                  />
+                </div>
+                <div class="box-input">
+                  <label for="qtd">Quantidade</label>
+                  <input
+                    type="text"
+                    name="qtd"
+                    placeholder="Insira o quantidade do produto"
+                    class="block"
+                  />
+                </div>
               </div>
-              <div class="box-input">
-                <label for="nome">Imagem</label>
-                <input
-                  type="file"
-                  name="nome"
-                  placeholder="Insira a imagem do produto"
-                  class="image"
-                />
+              <div class="input-submit">
+                <input type="submit" name="" id="salvar" value="Salvar" />
               </div>
-              <div class="box-input">
-                <label for="preco">Preço</label>
-                <input
-                  type="text"
-                  name=""
-                  placeholder="Insira o preço do produto"
-                  class="block"
-                />
-              </div>
-              <div class="box-input">
-                <label for="qtd">Quantidade</label>
-                <input
-                  type="text"
-                  name="qtd"
-                  placeholder="Insira o quantidade do produto"
-                  class="block"
-                />
-              </div>
-              <input type="submit" name="" id="salvar" value="Salvar" />
             </form>
   `;
 
