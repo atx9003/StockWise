@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
-    <link rel="stylesheet" href="form.css">
-</head>
-<body>
-    <h2>Cadastro</h2>
+    <link rel="stylesheet" href="/CSS-2/form.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>StockWise</h1>
+      </nav>
+    </header>
     <form action="/submit" method="POST">
-        <!-- Nome -->
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required>
-        <br>
+      <h2>Cadastro</h2>
+      <!-- Nome -->
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required />
+      <br />
 
-        <!-- E-mail -->
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
+      <!-- E-mail -->
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
 
-        <!-- Telefone -->
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
-        <br>
-   
-        <!-- Senha -->
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required>
-        <br>
+      <!-- Telefone -->
+      <label for="telefone">Telefone:</label>
+      type="tel"
+      <input id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" />
+      <br />
 
-        <!-- Confirmar senha -->
-        <label for="confirmaSenha">Confirme sua Senha:</label>
-        <input type="password" id="confirmaSenha" name="confirmaSenha" required>
-        <br>
+      <!-- Senha -->
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required />
+      <br />
 
-        <!-- Botão de enviar -->
-        <input type="submit" value="Enviar">
+      <!-- Confirmar senha -->
+      <label for="confirmaSenha">Confirme sua Senha:</label>
+      <input type="password" id="confirmaSenha" name="confirmaSenha" required />
+      <br />
+
+      <!-- Botão de enviar -->
+      <input type="submit" value="Enviar" />
     </form>
-</body>
+  </body>
 </html>
