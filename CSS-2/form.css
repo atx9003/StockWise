@@ -21,7 +21,7 @@ body {
 /* Cabeçalho */
 header {
   width: 100%;
-  background-color: #196FE2;
+  background-color: #196fe2;
   padding: 20px;
   text-align: center;
   color: white;
@@ -54,6 +54,7 @@ h2 {
 
 label {
   font-size: 14px;
+  margin-top: 20px;
   margin-bottom: 5px;
   display: block;
   color: #333;
@@ -65,25 +66,35 @@ input[type="tel"],
 input[type="password"] {
   width: 100%;
   padding: 10px;
-  margin: 10px 0 20px;
+  margin: 10px 0 0px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 14px;
+  outline-color: #ccc;
 }
 
-input[type="submit"] {
+.alerta {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #ff1313;
+  display: none;
+}
+
+button {
+  margin-top: 20px;
   width: 100%;
   padding: 10px;
-  background-color: #196FE2;
+  background-color: #196fe2;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 500;
 }
 
-input[type="submit"]:hover {
-  background-color: #196FE2;
+button:hover {
+  background-color: #196fe2;
 }
 
 /* Responsividade */
