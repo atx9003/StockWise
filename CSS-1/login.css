@@ -36,27 +36,24 @@ header h1 {
 }
 
 /* Login */
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .form {
+  width: 400px;
+  max-width: 90%;
   background-color: #fff;
-  display: block;
-  padding: 1rem;
-  max-width: 350px;
-  border-radius: 0.5rem;
-  box-shadow: 2px 5px 15px -3px rgba(0, 0, 0, 0.3);
-  margin-top: 10%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 
-.form-title {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  text-align: center;
-  color: #000;
+.form h2 {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 .input-container {
@@ -64,66 +61,57 @@ main {
   width: 100%;
 }
 
-.input-container input,
-.form button {
-  outline: none;
-  border: 1px solid #e5e7eb;
-  margin: 8px 0;
-}
-
-.input-container input {
-  background-color: #fff;
-  padding: 1rem;
-  padding-right: 3rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  width: 100%;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-}
-
 #eye {
   cursor: pointer;
   color: #6b7280;
   font-size: 1.2rem;
   position: absolute;
-  right: 5%;
-  top: 35%;
+  right: 3%;
+  top: 20%;
 }
 
-.submit {
+input {
   display: block;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  background-color: #534af7;
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
   width: 100%;
-  border-radius: 0.5rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: 0.2s;
+  padding: 10px;
+  padding-left: 5px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline-color: #ccc;
 }
 
-.submit:hover {
-  background-color: #4941e4;
+.notice {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #ff1313;
+  display: none;
 }
 
-.signup-link {
-  color: #6b7280;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-align: center;
+.noAcount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
-.signup-link a {
+.noAcount a {
   text-decoration: none;
+  color: #196fe2;
 }
 
-.signup-link a:hover {
+.noAcount a:hover {
   text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  background-color: #196fe2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 38px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
 }

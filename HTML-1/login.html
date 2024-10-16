@@ -17,21 +17,35 @@
       </nav>
     </header>
     <main>
-      <form class="form">
-        <p class="form-title">Faça o seu login</p>
-        <div class="input-container">
-          <input placeholder="Digite o seu e-mail" type="email" />
-        </div>
-        <div class="input-container">
-          <input placeholder="Digite a sua senha" type="password" id="pass" />
-          <i class="bi bi-eye" id="eye" onclick="showPass()"></i>
-        </div>
-        <button class="submit" type="submit">Entrar</button>
+      <form class="form" id="form">
+        <h2>Login</h2>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite o seu email"
+        />
+        <p id="noticeEmail" class="notice"></p>
 
-        <p class="signup-link">
-          Não tem conta?
+        <label for="password">Senha:</label>
+        <div class="input-container">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Digite a sua senha"
+          />
+          <i class="bi bi-eye" id="eye" onclick="showPass()"></i>
+          <p id="noticePass" class="notice">Por favor, digite sua senha</p>
+        </div>
+
+        <div class="noAcount">
+          <p>Não tem conta?</p>
           <a href="/HTML-2/form.html" target="_blank">Criar conta</a>
-        </p>
+        </div>
+
+        <button type="submit" class="submit">Entrar</button>
       </form>
     </main>
     <script src="/JS-1/login.js"></script>
