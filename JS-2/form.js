@@ -34,7 +34,7 @@ form.addEventListener("submit", (e) => {
 
   // verifica se o numero foi preenchido corretamente
   if (tefelone.value === "" || !isNumberValid(tefelone.value)) {
-    noticeTel.innerHTML = `Por favor, digite o número no seguinte padrão: (XX) XXXXX-XXXX`;
+    noticeTel.innerHTML = `Por favor, digite um número no seguinte padrão: (XX) XXXXX-XXXX`;
     noticeTel.style.display = "block";
     return;
   } else {
@@ -80,12 +80,12 @@ function isEmailValid(email) {
 }
 
 // função para validar o telefone
-// function isNumberValid(number) {
-//   const numberRegex = new RegExp(/^\(\d{2}\) \d{5}-\d{4}$/);
+function isNumberValid(number) {
+  const numberRegex = new RegExp(/^\(\d{2}\) \d{5}-\d{4}$/);
 
-//   if (numberRegex.test(number)) {
-//     return true;
-//   }
+  if (numberRegex.test(number)) {
+    return true;
+  }
 
-//   return false;
-// }
+  return false;
+}
