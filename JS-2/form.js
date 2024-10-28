@@ -50,6 +50,9 @@ form.addEventListener("submit", (e) => {
     noticePass.innerHTML = `A sua senha deve conter no mínimo 8 caracteres`;
     noticePass.style.display = "block";
     return;
+  } else if (passInput.value.length > 20) {
+    noticePass.innerHTML = `A sua senha deve conter no máximo 20 caracteres`;
+    noticePass.style.display = "block";
   } else {
     noticePass.style.display = "none";
   }
