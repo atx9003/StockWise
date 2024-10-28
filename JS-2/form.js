@@ -1,7 +1,7 @@
 const form = document.getElementById("form");
 const nameInput = document.getElementById("nome");
 const emailInput = document.getElementById("email");
-const tefelone = document.getElementById("telefone");
+const telefone = document.getElementById("telefone");
 const passInput = document.getElementById("senha");
 const confirmaSenha = document.getElementById("confirmaSenha");
 const noticeName = document.getElementById("noticeName");
@@ -36,7 +36,7 @@ form.addEventListener("submit", (e) => {
   }
 
   // verifica se o numero foi preenchido corretamente
-  if (tefelone.value === "" || !isNumberValid(tefelone.value)) {
+  if (telefone.value === "" || !isNumberValid(telefone.value)) {
     noticeTel.innerHTML = `Por favor, digite um número no seguinte padrão: (XX) XXXXX-XXXX`;
     noticeTel.style.display = "block";
     return;
