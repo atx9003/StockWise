@@ -10,6 +10,9 @@ const noticeTel = document.getElementById("noticeTel");
 const noticePass = document.getElementById("noticePass");
 const noticeConfPass = document.getElementById("noticeConfPass");
 
+// variável para envio do form
+const inputs = document.querySelectorAll(`form input`);
+
 form.addEventListener("submit", (e) => {
   // impede que o botão envie o formulário antes da validação do JS
   e.preventDefault();
@@ -65,6 +68,16 @@ form.addEventListener("submit", (e) => {
   } else {
     noticeConfPass.style.display = "none";
   }
+
+  // evento para enviar o form ao pressionar Enter
+  inputs.forEach((input) => {
+    input.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        form.submit();
+      }
+    });
+  });
   // se todos os campos estiverem preenchidos envie o form
   form.submit();
 });
@@ -92,3 +105,13 @@ function isNumberValid(number) {
 
   return false;
 }
+
+// // evento para enviar o form ao pressionar Enter
+// inputs.forEach((input) => {
+//   input.addEventListener("keydown", function (event) {
+//     if (event.key === "Enter") {
+//       event.preventDefault();
+//       form.submit();
+//     }
+//   });
+// });
