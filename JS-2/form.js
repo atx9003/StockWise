@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
   // impede que o botão envie o formulário antes da validação do JS
   e.preventDefault();
 
-  // verifica se o input do  nome tá preenchido
+  // verifica se o input do nome tá preenchido
   if (nameInput.value === "") {
     noticeName.innerHTML = `Por favor, preencha o seu nome`;
     noticeName.style.display = "block";
@@ -35,7 +35,7 @@ form.addEventListener("submit", (e) => {
     noticeEmail.style.display = "none";
   }
 
-  // verifica se o numero foi preenchido corretamente
+  // verifica se o número foi preenchido corretamente
   if (telefone.value === "" || !isNumberValid(telefone.value)) {
     noticeTel.innerHTML = `Por favor, digite um número no seguinte padrão: (XX) XXXXX-XXXX`;
     noticeTel.style.display = "block";
@@ -56,11 +56,12 @@ form.addEventListener("submit", (e) => {
   } else if (passInput.value.length > 20) {
     noticePass.innerHTML = `A sua senha deve conter no máximo 20 caracteres`;
     noticePass.style.display = "block";
+    return;
   } else {
     noticePass.style.display = "none";
   }
 
-  // verifica se a senha é igual a da confimação
+  // verifica se a senha é igual a da confirmação
   if (confirmaSenha.value !== passInput.value) {
     noticeConfPass.innerHTML = `As senhas não correspondem`;
     noticeConfPass.style.display = "block";
@@ -69,17 +70,10 @@ form.addEventListener("submit", (e) => {
     noticeConfPass.style.display = "none";
   }
 
-  // evento para enviar o form ao pressionar Enter
-  inputs.forEach((input) => {
-    input.addEventListener("keydown", function (event) {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        form.submit();
-      }
-    });
-  });
-  // se todos os campos estiverem preenchidos envie o form
+  // se todos os campos estiverem preenchidos, envie o formulário
   form.submit();
+  // redireciona para a página login.html após o envio do formulário
+  window.location.href = "/HTML-1/login.html";
 });
 
 // função que valida o email
@@ -88,30 +82,21 @@ function isEmailValid(email) {
     /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
   );
 
-  if (emailRegex.test(email)) {
-    return true;
-  }
-
-  return false;
+  return emailRegex.test(email);
 }
 
 // função para validar o telefone
 function isNumberValid(number) {
   const numberRegex = new RegExp(/^\(\d{2}\) \d{5}-\d{4}$/);
-
-  if (numberRegex.test(number)) {
-    return true;
-  }
-
-  return false;
+  return numberRegex.test(number);
 }
 
-// // evento para enviar o form ao pressionar Enter
-// inputs.forEach((input) => {
-//   input.addEventListener("keydown", function (event) {
-//     if (event.key === "Enter") {
-//       event.preventDefault();
-//       form.submit();
-//     }
-//   });
-// });
+// evento para enviar o form ao pressionar Enter
+inputs.forEach((input) => {
+  input.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      form.dispatchEvent(new Event("submit"));
+    }
+  });
+});
