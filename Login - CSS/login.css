@@ -37,7 +37,7 @@ header h1 {
 
 /* Login */
 .form {
-  width: 400px;
+  width: 450px; /* Aumentado a largura do formulário */
   max-width: 90%;
   background-color: #fff;
   border: 1px solid transparent;
@@ -64,7 +64,7 @@ label {
 #eye {
   cursor: pointer;
   color: #6b7280;
-  font-size: 1.2rem;
+  font-size: 1rem; /* Diminuído o tamanho do ícone */
   position: absolute;
   right: 3%;
   top: 25%;
@@ -114,4 +114,86 @@ button {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .form {
+    width: 90%; /* Ajustado para 90% da tela */
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .form h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .noAcount {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .noAcount a {
+    margin-top: 10px;
+  }
+}
+
+/* Responsividade para telas muito pequenas (ex: dispositivos móveis em modo retrato) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  .form {
+    padding: 15px;
+  }
+
+  .form h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  input {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  button {
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .noAcount {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .noAcount a {
+    font-size: 14px;
+    margin-top: 8px;
+  }
 }

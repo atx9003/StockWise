@@ -73,7 +73,7 @@ form.addEventListener("submit", (e) => {
   // se todos os campos estiverem preenchidos, envie o formulário
   form.submit();
   // redireciona para a página login.html após o envio do formulário
-  window.location.href = "/HTML-1/login.html";
+  window.location.href = "/Login - HTML/login.html";
 });
 
 // função que valida o email
