@@ -106,7 +106,7 @@ button:hover {
 .modal-content {
   background-color: #fff;
   border-radius: 0.7rem;
-  margin: 15% auto;
+  margin: 10% auto;
   width: 500px;
   max-width: 90%;
   padding: 20px;
@@ -181,7 +181,7 @@ button:hover {
 .modal-content-create {
   background-color: #fff;
   border-radius: 0.7rem;
-  margin: 15% auto;
+  margin: 9% auto;
   width: 500px;
   max-width: 90%;
   padding: 20px;
