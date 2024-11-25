@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
   // impede que o botão envie o formulário antes da validação do JS
   e.preventDefault();
 
-  // verifica se o input do nome tá preenchido
+  // verifica se o input do nome está preenchido
   if (nameInput.value === "") {
     noticeName.innerHTML = `Por favor, preencha o seu nome`;
     noticeName.style.display = "block";
